@@ -4,7 +4,7 @@ class CuentaBancaria:
         self.saldo = saldo
 
     def deposito(self, deposito):
-        self.saldo =+ deposito
+        self.saldo += deposito
     
     def retiro(self, retiro):
         if self.saldo <= 0:
@@ -12,13 +12,13 @@ class CuentaBancaria:
         elif retiro > self.saldo:
             print("La cuenta no cuenta con los fondos que necesita")
         else:
-            self.saldo=- retiro
+            self.saldo-= retiro
         
     def obtenerSaldo(self):
         return f"El saldo de la cuenta {self.cuenta} es de: {self.saldo}"
     
 cuenta1 = CuentaBancaria("0702", 100)
 cuenta1.deposito(300)
-cuenta1.retiro(300)
+cuenta1.retiro(200)
 print(cuenta1.obtenerSaldo())
 
