@@ -1,7 +1,7 @@
 #Override Method
 class Ave:
     def __init__(self):
-        self.volador = "volador"
+        self.vuela = "volador"
     def vuelta(self):
         print("vuela ave")
 
@@ -18,4 +18,4 @@ pato.vuelta()
 #Al tener ambos metodos el mismo nombre, el de la clase padre se cancela
 #y se usa el metodo en la clase hija
 
-print(pato.volador, pato.nada)
+print(pato.vuela, pato.nada)
